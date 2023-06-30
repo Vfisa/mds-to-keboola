@@ -1,0 +1,106 @@
+{
+  "parameters": {},
+  "storage": {
+    "input": {
+      "tables": [
+        {
+          "source": "out.c-download_file.olist_geolocation_dataset",
+          "destination": "olist_geolocation",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.product_category_name_translation",
+          "destination": "product_category_name_translation",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_order_reviews_dataset",
+          "destination": "olist_order_reviews",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_order_payments_dataset",
+          "destination": "olist_order_payments",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_order_items_dataset",
+          "destination": "olist_order_items",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_products_dataset",
+          "destination": "olist_products",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_orders_dataset",
+          "destination": "olist_orders",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_sellers_dataset",
+          "destination": "olist_sellers",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        },
+        {
+          "source": "out.c-download_file.olist_customers_dataset",
+          "destination": "olist_customers",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        }
+      ]
+    },
+    "output": {
+      "tables": [
+        {
+          "destination": "out.c-modelling-proper.customer_behavior",
+          "source": "customer_behavior"
+        },
+        {
+          "destination": "out.c-modelling-proper.geographical_performance",
+          "source": "geographical_performance"
+        },
+        {
+          "destination": "out.c-modelling-proper.product_performance",
+          "source": "product_performance"
+        }
+      ]
+    }
+  }
+}

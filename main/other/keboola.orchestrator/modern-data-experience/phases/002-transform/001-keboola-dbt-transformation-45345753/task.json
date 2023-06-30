@@ -1,0 +1,9 @@
+{
+  "name": "keboola.dbt-transformation-45345753",
+  "enabled": true,
+  "task": {
+    "mode": "run",
+    "configPath": "transformation/keboola.dbt-transformation/model-data"
+  },
+  "continueOnFailure": false
+}

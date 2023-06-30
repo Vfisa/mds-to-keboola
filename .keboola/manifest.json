@@ -1,0 +1,89 @@
+{
+  "version": 2,
+  "project": {
+    "id": 15834,
+    "apiHost": "connection.north-europe.azure.keboola.com"
+  },
+  "sortBy": "id",
+  "naming": {
+    "branch": "{branch_name}",
+    "config": "{component_type}/{component_id}/{config_name}",
+    "configRow": "rows/{config_row_name}",
+    "schedulerConfig": "schedules/{config_name}",
+    "sharedCodeConfig": "_shared/{target_component_id}",
+    "sharedCodeConfigRow": "codes/{config_row_name}",
+    "variablesConfig": "variables",
+    "variablesValuesRow": "values/{config_row_name}"
+  },
+  "allowedBranches": [
+    "__main__"
+  ],
+  "ignoredComponents": [],
+  "templates": {
+    "repositories": [
+      {
+        "type": "git",
+        "name": "keboola",
+        "url": "https://github.com/keboola/keboola-as-code-templates.git",
+        "ref": "main"
+      }
+    ]
+  },
+  "branches": [
+    {
+      "id": 162962,
+      "path": "main"
+    }
+  ],
+  "configurations": [
+    {
+      "branchId": 162962,
+      "componentId": "keboola.dbt-transformation",
+      "id": "45345753",
+      "path": "transformation/keboola.dbt-transformation/model-data",
+      "rows": []
+    },
+    {
+      "branchId": 162962,
+      "componentId": "keboola.ex-http",
+      "id": "45344272",
+      "path": "extractor/keboola.ex-http/olist-sample",
+      "rows": []
+    },
+    {
+      "branchId": 162962,
+      "componentId": "keboola.orchestrator",
+      "id": "45345884",
+      "path": "other/keboola.orchestrator/modern-data-experience",
+      "rows": []
+    },
+    {
+      "branchId": 162962,
+      "componentId": "keboola.python-transformation-v2",
+      "id": "45344378",
+      "path": "transformation/keboola.python-transformation-v2/download-file",
+      "rows": []
+    },
+    {
+      "branchId": 162962,
+      "componentId": "keboola.scheduler",
+      "id": "45345992",
+      "path": "schedules/scheduler-for-45345884",
+      "relations": [
+        {
+          "componentId": "keboola.orchestrator",
+          "configId": "45345884",
+          "type": "schedulerFor"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "branchId": 162962,
+      "componentId": "keboola.snowflake-transformation",
+      "id": "45346074",
+      "path": "transformation/keboola.snowflake-transformation/modelling-proper",
+      "rows": []
+    }
+  ]
+}

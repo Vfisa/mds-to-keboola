@@ -1,0 +1,9 @@
+{
+  "name": "keboola.python-transformation-v2-45344378",
+  "enabled": true,
+  "task": {
+    "mode": "run",
+    "configPath": "transformation/keboola.python-transformation-v2/download-file"
+  },
+  "continueOnFailure": false
+}

@@ -1,0 +1,54 @@
+{
+  "artifacts": {
+    "options": {
+      "zip": false
+    }
+  },
+  "parameters": {
+    "dbt": {
+      "freshness": {
+        "warn_after": {
+          "count": 1,
+          "active": true,
+          "period": "day"
+        },
+        "error_after": {
+          "count": 2,
+          "active": true,
+          "period": "day"
+        }
+      },
+      "executeSteps": [
+        {
+          "step": "dbt build",
+          "active": false
+        },
+        {
+          "step": "dbt run",
+          "active": true
+        },
+        {
+          "step": "dbt docs generate",
+          "active": true
+        },
+        {
+          "step": "dbt test",
+          "active": false
+        },
+        {
+          "step": "dbt source freshness",
+          "active": false
+        },
+        {
+          "step": "dbt seed",
+          "active": false
+        }
+      ]
+    },
+    "showExecutedSqls": true,
+    "git": {
+      "repo": "https://github.com/Vfisa/olist_live",
+      "branch": "main"
+    }
+  }
+}

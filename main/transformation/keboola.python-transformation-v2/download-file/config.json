@@ -1,0 +1,45 @@
+{
+  "parameters": {},
+  "storage": {
+    "output": {
+      "tables": [
+        {
+          "destination": "out.c-download_file.olist_customers_dataset",
+          "source": "olist_customers_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_geolocation_dataset",
+          "source": "olist_geolocation_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_order_items_dataset",
+          "source": "olist_order_items_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_order_payments_dataset",
+          "source": "olist_order_payments_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_order_reviews_dataset",
+          "source": "olist_order_reviews_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_orders_dataset",
+          "source": "olist_orders_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_products_dataset",
+          "source": "olist_products_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.olist_sellers_dataset",
+          "source": "olist_sellers_dataset.csv"
+        },
+        {
+          "destination": "out.c-download_file.product_category_name_translation",
+          "source": "product_category_name_translation.csv"
+        }
+      ]
+    }
+  }
+}

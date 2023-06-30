@@ -1,0 +1,9 @@
+{
+  "name": "keboola.snowflake-transformation-45346074",
+  "enabled": true,
+  "task": {
+    "mode": "run",
+    "configPath": "transformation/keboola.snowflake-transformation/modelling-proper"
+  },
+  "continueOnFailure": false
+}
